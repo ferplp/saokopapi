@@ -10,7 +10,11 @@
     <!-- css personalizado -->
     <link rel="stylesheet" href="style.css">
     <script>
-      console.log("saoko papi saoko");
+      console.log("Saoko papi saoko");
+      function colorTitulo(){
+        console.log("Pulsó el botón de Generation");
+        document.getElementById("generation").style.color = "red";
+      }
     </script>
 </head>
 <body>
@@ -56,12 +60,11 @@
         <!-- Descripcion Generetion -->
         <div class="row">
             <div>
-                <h1>Estar en Generetion es de...</h1>
+                <h1>Estar en <span id="generation">Generetion</span> es de...</h1>
 
                 <p>Tener que buscar vestuarios para los viernes tematicos.</p>
-                    <a href="https://mexico.generation.org/
-                    " target="_blank" class="btn btn-success">Visita Generetion</a>
-                </p>
+                <p onclick="colorTitulo()"><a href="https://mexico.generation.org/
+                    " target="_blank" class="btn btn-success">Visita Generetion</a></p>
             </div>
         </div>
         <!-- Descripcion HTML -->
